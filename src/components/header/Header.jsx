@@ -9,13 +9,13 @@ export default function Header() {
   return (
     <header className='d-flex justify-content-between align-items-center'>
       <div className="left-head">
-        DASHBOARD❤
+        MyCMS
       </div>
 
       <div className="right-head d-flex align-items-center">
         <div className="icon-container">
           <NotificationsIcon></NotificationsIcon>
-          <span className="notifications-icon-badge">2</span>
+          <span className="notifications-icon-badge">5</span>
         </div>
 
         <div className="icon-container">
