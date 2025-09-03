@@ -1,0 +1,15 @@
+.chartm {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    padding: 30px 10px 30px 10px;
+    height: 20rem;
+    /* دسکتاپ */
+}
+
+@media (max-width: 768px) {
+    .chartm {
+        height: 15rem;
+        /* موبایل */
+    }
+}

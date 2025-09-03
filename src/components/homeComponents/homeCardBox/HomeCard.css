@@ -1,0 +1,41 @@
+.home-card-first {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    width: 32%;
+    max-width: 30rem;
+}
+
+.home-card-first .card-bottom {
+    opacity: .5;
+}
+
+.card-bottom {
+    font-size: 12px;
+}
+
+
+
+
+/* Extra small devices (portrait phones, <576px) */
+@media (max-width: 575.98px) {
+    .home-card-first {
+        width: 100%;
+    }
+}
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (≥1200px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+/* Extra extra large devices (≥1400px) */
+@media (min-width: 1400px) {
+   
+}

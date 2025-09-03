@@ -1,0 +1,38 @@
+.newMemberList {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    padding: 30px 10px 30px 10px;
+}
+
+.newMember {
+    border-bottom: solid 1px rgba(128, 128, 128, .4);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.newMemberAvatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: .25rem;
+}
+.newMemberInfo{
+    width: 20%;
+}
+.visibilityIcon {
+    background: rgb(216, 216, 216);
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.userSkill {
+    font-size: .7rem;
+    opacity: .6;
+}
+
+.userSkill,
+.userName {
+    margin: 0;
+}

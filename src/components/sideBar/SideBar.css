@@ -1,13 +1,11 @@
 .sideBar {
     background-color: #ecf8ff;
     height: calc(100vh - 5rem);
-    width: 18rem;
     position: sticky;
     top: 5rem;
 }
 
 .sideBar-list {
-    margin-left: .8rem;
     padding: 0;
 }
 
@@ -22,7 +20,7 @@
     text-decoration: none;
     color: black;
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
 }
 
 .active,
