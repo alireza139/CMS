@@ -5,18 +5,18 @@ import { newMembers } from '../../../CmsDB';
 
 export default function NewMembers() {
     return (
-        <div className='newMemberList'>
+        <div className='newMemberList px-2'>
             <h5>New Members:</h5>
-            <ul>
+            <ul className='p-0'>
                 {
                     newMembers.map(newMember =>
                     (<li key={newMember.id} className='newMember d-flex justify-content-between align-items-center'>
                         <img src="cat.jpg" alt="newMemberAvatar" className='newMemberAvatar' />
                         <div className="newMemberInfo">
-                            <p className="userName">{newMember.userName}</p>
+                            <p className="userName fs-6">{newMember.userName}</p>
                             <p className="userSkill">{newMember.userSkill}</p>
                         </div>
-                        <VisibilityIcon className='visibilityIcon'></VisibilityIcon>
+                        <VisibilityIcon className='visibilityIcon fs-5'></VisibilityIcon>
                     </li>)
                     )
                 }

@@ -72,4 +72,35 @@ const newMembers = [
     },
 ]
 
-export { sellsInfo, newMembers }
+const transActions = [
+    {
+        id: 1,
+        customer: 'Alireza Hosseini',
+        date: "13 Agu",
+        status: "approved",
+        amount: 158
+    },
+    {
+        id: 2,
+        customer: "Amin Farhadi",
+        date: "25 Jul",
+        status: "declined",
+        amount: 122
+    },
+    {
+        id: 3,
+        customer: "Ali Abdollahi",
+        date: "18 Oct",
+        status: "declined",
+        amount: 39
+    },
+    {
+        id: 4,
+        customer: "Peyman Asadi",
+        date: "1 Nov",
+        status: "pending",
+        amount: 75
+    },
+]
+
+export { sellsInfo, newMembers , transActions}

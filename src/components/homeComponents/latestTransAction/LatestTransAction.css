@@ -1,0 +1,99 @@
+.latestTransActionBox {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    padding: 30px 10px 30px 10px;
+}
+
+.latestTransActionTable td {
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+    font-size: .8rem;
+}
+
+.latestTransAction-btn {
+    border: none;
+    font-size: .8rem;
+    width: 5rem;
+    padding: 2px 5px 4px;
+    opacity: .7;
+    border-radius: 8px;
+}
+.latestTransActionTable th {
+    border-bottom: solid 1px rgba(128, 128, 128, .4);
+}
+
+.latestTransAction-approved-btn {
+    background: rgb(203, 255, 203);
+    color: rgb(0, 105, 0);
+}
+
+.latestTransAction-declined-btn {
+    background: rgb(255, 180, 180);
+    color: rgb(162, 0, 0);
+}
+
+.latestTransAction-pending-btn {
+    background: rgb(176, 225, 255);
+    color: rgb(0, 107, 169);
+}
+
+.customer-avatar {
+    width: 3rem;
+    height: 3rem;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.customer-declined-avatar {
+    border: 3px dashed rgb(162, 0, 0);
+}
+
+.customer-approved-avatar {
+    border: 3px dashed rgb(0, 105, 0);
+}
+
+.customer-pending-avatar {
+    border: 3px dashed rgb(0, 107, 169);
+}
+
+
+
+
+/* Extra small devices (xs) */
+@media (max-width: 575.98px) {
+    .hidden-in-mobile {
+        display: none;
+    }
+
+    .latestTransActionBox {
+        width: 100%;
+    }
+}
+
+/* Small devices (sm) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .latestTransActionBox {
+        width: 100%;
+    }
+}
+
+/* Medium devices (md) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .latestTransActionBox {
+        width: 60%;
+    }
+}
+
+/* Large devices (lg) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .latestTransActionBox {
+        width: 70%;
+    }
+}
+
+/* Extra large devices (xl) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+/* Extra extra large devices (xxl) */
+@media (min-width: 1400px) {}

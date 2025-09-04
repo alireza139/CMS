@@ -42,8 +42,5 @@ export default function HomeCard() {
         <span className='card-bottom'>Compared to last month</span>
       </div>
     </div>
-
-
-
   )
 }
