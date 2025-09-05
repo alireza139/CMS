@@ -23,8 +23,9 @@ export default function UsersList() {
             renderCell: (params) => {
                 return (
                     <Link to="/" className="userList-item">
-                        <div>
+                        <div className='position-relative'>
                             <img src="cat.jpg" className='userAva' />
+                            <div className={`position-absolute ${params.row.status === "active" ? "user-status-active" : "user-status-deactive"}`}></div>
                             <span className="user-name">{params.row.userName}</span>
                         </div>
                     </Link>
@@ -72,7 +73,7 @@ export default function UsersList() {
     }
 
     return (
-        <Paper className='mx-3 mt-5' sx={{ height: 400}} elevation={3}>
+        <Paper className='mx-3 mt-5' sx={{ height: 400 }} elevation={3}>
             <DataGrid
                 rows={usersInf}
                 columns={columns}

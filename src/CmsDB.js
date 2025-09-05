@@ -53,21 +53,25 @@ const newMembers = [
     {
         id: 1,
         userName: 'Alireza Hosseini',
+        isActive: true,
         userSkill: 'Web Developer'
     },
     {
         id: 2,
         userName: "Amin Farhadi",
+        isActive: false,
         userSkill: "Back-end Developer"
     },
     {
         id: 3,
         userName: "Ali Abdollahi",
+        isActive: false,
         userSkill: "AI Engineer"
     },
     {
         id: 4,
         userName: "Peyman Asadi",
+        isActive: false,
         userSkill: "Networl Technesian"
     },
 ]
@@ -114,49 +118,49 @@ const usersInfo = [
     {
         id: 2,
         userName: "Reza Nasery",
-        status: "non-active",
+        status: "active",
         transaction: "1400$",
         email: "rezaNasery2000@gmail.com"
     },
     {
         id: 3,
         userName: "Navid Vahidi",
-        status: "active",
+        status: "deactive",
         transaction: "450$",
         email: "navid69844@gmail.com"
     },
     {
         id: 4,
         userName: "Taher mohammadi",
-        status: "active",
+        status: "deactive",
         transaction: "900$",
         email: "taher74Mohammady@gmail.com"
     },
     {
         id: 5,
         userName: "Alireza Hosseini",
-        status: "active",
+        status: "deactive",
         transaction: "550$",
         email: "alirezahosseini52@gmail.com"
     },
     {
         id: 6,
         userName: "Reza Nasery",
-        status: "non-active",
+        status: "deactive",
         transaction: "1400$",
         email: "rezaNasery2000@gmail.com"
     },
     {
         id: 7,
         userName: "Navid Vahidi",
-        status: "active",
+        status: "deactive",
         transaction: "450$",
         email: "navid69844@gmail.com"
     },
     {
         id: 8,
         userName: "Taher mohammadi",
-        status: "active",
+        status: "deactive",
         transaction: "900$",
         email: "taher74Mohammady@gmail.com"
     },

@@ -11,7 +11,10 @@ export default function NewMembers() {
                 {
                     newMembers.map(newMember =>
                     (<li key={newMember.id} className='newMember d-flex justify-content-between align-items-center'>
-                        <img src="cat.jpg" alt="newMemberAvatar" className='newMemberAvatar' />
+                        <div className='position-relative'>
+                            <img src="cat.jpg" alt="newMemberAvatar" className='newMemberAvatar' />
+                            <div className={`position-absolute ${newMember.isActive ? "user-status-online" : "user-status-offline"}`}></div>
+                        </div>
                         <div className="newMemberInfo">
                             <p className="userName fs-6">{newMember.userName}</p>
                             <p className="userSkill">{newMember.userSkill}</p>
