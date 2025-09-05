@@ -1,0 +1,12 @@
+.userAva{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.userList-item{
+    text-decoration: none;
+}
+.user-name{
+    color: black;
+    margin-left: 0.5rem;
+}

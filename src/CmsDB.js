@@ -103,4 +103,63 @@ const transActions = [
     },
 ]
 
-export { sellsInfo, newMembers , transActions}
+const usersInfo = [
+    {
+        id: 1,
+        userName: "Alireza Hosseini",
+        status: "active",
+        transaction: "550$",
+        email: "alirezahosseini52@gmail.com"
+    },
+    {
+        id: 2,
+        userName: "Reza Nasery",
+        status: "non-active",
+        transaction: "1400$",
+        email: "rezaNasery2000@gmail.com"
+    },
+    {
+        id: 3,
+        userName: "Navid Vahidi",
+        status: "active",
+        transaction: "450$",
+        email: "navid69844@gmail.com"
+    },
+    {
+        id: 4,
+        userName: "Taher mohammadi",
+        status: "active",
+        transaction: "900$",
+        email: "taher74Mohammady@gmail.com"
+    },
+    {
+        id: 5,
+        userName: "Alireza Hosseini",
+        status: "active",
+        transaction: "550$",
+        email: "alirezahosseini52@gmail.com"
+    },
+    {
+        id: 6,
+        userName: "Reza Nasery",
+        status: "non-active",
+        transaction: "1400$",
+        email: "rezaNasery2000@gmail.com"
+    },
+    {
+        id: 7,
+        userName: "Navid Vahidi",
+        status: "active",
+        transaction: "450$",
+        email: "navid69844@gmail.com"
+    },
+    {
+        id: 8,
+        userName: "Taher mohammadi",
+        status: "active",
+        transaction: "900$",
+        email: "taher74Mohammady@gmail.com"
+    },
+]
+
+export { sellsInfo, newMembers, transActions, usersInfo }
