@@ -31,7 +31,7 @@ export default function ProductsList() {
             align: "center",         // محتوای سلول هم وسط‌چین
             renderCell: (params) => {
                 return (
-                    <Link to="/" className="userList-item">
+                    <Link to={`/Product/${params.row.id}`} className="userList-item">
                         <img src={params.row.imgSrc} className='product-img' />
                         <span className="user-name">{params.row.name}</span>
                     </Link>

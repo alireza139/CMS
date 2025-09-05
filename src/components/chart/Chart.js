@@ -14,7 +14,7 @@ import './Chart.css'
 export default function Chart({ title, data, datakey, grid }) {
     return (
         <div className='chartm pt-3' >
-            <h5>sell chart:</h5>
+            <h5>{title}</h5>
             <ResponsiveContainer width="100%">
                 <LineChart data={data}>
                     <Line type="monotone" dataKey={datakey} stroke="#5550bd"></Line>
