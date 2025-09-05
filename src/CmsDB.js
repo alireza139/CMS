@@ -76,7 +76,7 @@ const newMembers = [
     },
 ]
 
-const transActions = [
+let transActions = [
     {
         id: 1,
         customer: 'Alireza Hosseini',
@@ -107,7 +107,7 @@ const transActions = [
     },
 ]
 
-const usersInfo = [
+let usersInfo = [
     {
         id: 1,
         userName: "Alireza Hosseini",
@@ -166,4 +166,63 @@ const usersInfo = [
     },
 ]
 
-export { sellsInfo, newMembers, transActions, usersInfo }
+let productsInfo = [
+    {
+        id: 1,
+        name: "product-1",
+        price: 152,
+        imgSrc: "coats/coat1.jpg",
+        count: 20
+    },
+    {
+        id: 2,
+        name: "product-2",
+        price: 555,
+        imgSrc: "coats/coat2.jpg",
+        count: 20
+    },
+    {
+        id: 3,
+        name: "product-3",
+        price: 140,
+        imgSrc: "coats/coat3.jpg",
+        count: 20
+    },
+    {
+        id: 4,
+        name: "product-4",
+        price: 495,
+        imgSrc: "coats/coat4.webp",
+        count: 20
+    },
+    {
+        id: 5,
+        name: "product-5",
+        price: 120,
+        imgSrc: "coats/coat5.jpg",
+        count: 20
+    },
+    {
+        id: 6,
+        name: "product-6",
+        price: 184,
+        imgSrc: "coats/coat6.webp",
+        count: 20
+    },
+    {
+        id: 7,
+        name: "product-7",
+        price: 271,
+        imgSrc: "coats/coat1.jpg",
+        count: 20
+    },
+    {
+        id: 8,
+        name: "product-8",
+        price: 350,
+        imgSrc: "coats/coat2.jpg",
+        count: 20
+    },
+]
+
+export { sellsInfo, newMembers, transActions, usersInfo , productsInfo}
