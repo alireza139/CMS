@@ -87,7 +87,7 @@ export default function ProductsList() {
     }
 
     return (
-        <Paper className='mx-3 mt-4' sx={{ height: 600 }} elevation={3}>
+        <Paper className='mx-3 mt-4' sx={{ height: 500 }} elevation={3}>
             <DataGrid
                 rows={productsInf}
                 columns={columns}

@@ -1,8 +1,12 @@
 import React from 'react'
 import ProductsList from "../../components/productsComponent/ProductsList"
+import CuModal from '../../components/customModal/CuModal'
 
 export default function Products() {
   return (
-    <ProductsList></ProductsList>
+    <>
+      <CuModal></CuModal>
+      <ProductsList></ProductsList>
+    </>
   )
 }
