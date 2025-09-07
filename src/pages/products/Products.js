@@ -5,7 +5,7 @@ import CuModal from '../../components/customModal/CuModal'
 export default function Products() {
   return (
     <>
-      <CuModal></CuModal>
+      <CuModal modalMode={"add"}></CuModal>
       <ProductsList></ProductsList>
     </>
   )

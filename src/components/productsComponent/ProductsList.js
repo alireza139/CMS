@@ -6,6 +6,8 @@ import { productsInfo } from '../../CmsDB';
 import "./ProductsList.css"
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
+import CuModal from '../../components/customModal/CuModal'
+
 
 export default function ProductsList() {
     const [productsInf, setproductsInf] = useState(productsInfo)
@@ -66,9 +68,9 @@ export default function ProductsList() {
             renderCell: (params) => {
                 return (
                     <div className='d-flex justify-content-evenly h-100 align-items-center'>
-                        <Link to={`/product/${params.row.id}`}>
-                            <EditIcon onClick={() => handleEdit(params.row.id)} style={{ cursor: 'pointer' }} />
-                        </Link>
+
+                        <EditIcon onClick={() => handleEdit(params.row.id)} style={{ cursor: 'pointer' }} />
+
                         <DeleteIcon onClick={() => handleDelete(params.row.id)} style={{ cursor: 'pointer' }} />
                     </div>
                 )
