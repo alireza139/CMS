@@ -49,3 +49,8 @@
     left: 10px;
     top: 2px;
 }
+
+/*disabled Link*/
+.disabled-item{
+    opacity: .4;
+}
