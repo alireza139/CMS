@@ -24,20 +24,38 @@ export default function CuModal({ innerBtn, modalMode, productslist, chosenProdu
     const submitHandler = (e) => {
         e.preventDefault();
 
-        if (modalMode === "add" && name && price && count && imgSrc) {
-            const product = { name, price: Number(price), imgSrc, count: Number(count) };
+        // تبدیل مقادیر به عدد
+        const numPrice = Number(price);
+        const numCount = Number(count);
 
-            // send new product to parrent
-            if (onReceive) onReceive(product);
-        }
-        if (modalMode === "edit" && chosenProduct && name && price && count && imgSrc) {
-            const product = { id: chosenProduct.id, name, price: Number(price), imgSrc, count: Number(count) };
-
-            // send new product to parrent
-            if (onReceive) onReceive(product);
+        // اعتبارسنجی
+        if (!name.trim() || !imgSrc.trim() || !count || !price || !imgSrc.trim()) {
+            alert("لطفا تمام فیلدها را پر کنید")
+            return;
         }
 
-        // close modal and clear form
+        // اعتبارسنجی اعداد
+        if (isNaN(numPrice) || isNaN(numCount) || numPrice < 1 || numCount < 0) {
+            alert("قیمت و تعداد باید عددی و مثبت باشند.");
+            return;
+        }
+
+
+        // آماده کردن محصول
+        const product = {
+            name: name.trim(),
+            price: numPrice,
+            count: numCount,
+            imgSrc: imgSrc.trim(),
+
+            // افزودن ایدی در حالت ادیت به آبجکت
+            ...(modalMode === "edit" && chosenProduct ? { id: chosenProduct.id } : {}),
+        };
+
+        // ارسال محصول به والد
+        if (onReceive) onReceive(product);
+
+        // پاک کردن فرم و بستن مودال
         setIsShow(false);
         setName(""); setPrice(""); setCount(""); setImgSrc("");
     };
